@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 0;
+}
+
+form, .box {
+    background: white;
+    padding: 30px;
+    width: 450px;
+    margin: 40px auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+input, select, textarea, button {
+    width: 100%;
+    margin-top: 12px;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+button {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.box a {
+    display: inline-block;
+    color: #667eea;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 8px 5px;
+    border-radius: 6px;
+    background: #f0f4ff;
+    transition: all 0.3s ease;
+}
+
+.box a:hover {
+    background: #667eea;
+    color: white;
+    transform: translateX(5px);
+}
+
+.box p {
+    padding: 10px 0;
+    color: #555;
+    font-size: 16px;
+}
+
+table {
+    width: 95%;
+    max-width: 1200px;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+th {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid #f0f0f0;
+    color: #555;
+}
+
+tr:hover {
+    background: #f8f9ff;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+td a {
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    display: inline-block;
+    margin: 2px;
+}
+
+td a[href*="update"] {
+    color: #667eea;
+    background: #f0f4ff;
+}
+
+td a[href*="update"]:hover {
+    background: #667eea;
+    color: white;
+}
+
+td a[href*="delete"] {
+    color: #e74c3c;
+    background: #ffe8e8;
+}
+
+td a[href*="delete"]:hover {
+    background: #e74c3c;
+    color: white;
+}
+
+.navbar {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 18px 25px;
+    display: inline-block;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-bottom: 3px solid white;
+}
